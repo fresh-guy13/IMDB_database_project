@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Movie Database</title>
+    <link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+
+    <div class="container">
+      <form action="../php/login.php" method="post">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="submit">Login</button>
+        </form>
+        <button onclick="document.getElementById('signup').style.display='block'" >Create Account</button>
+      
+      
+    </div>
+    <div id="signup" class="modal">
+        <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="../php/signup.php" method="post">
+          <div class="container">
+            <h1>Create an account for yourself!</h1>
+            <hr>
+            <div class = "LR" >
+              <label for="F-Name" ><b>First Name</b></label>
+              <label for="L-Name" ><b>Last Name</b></label>
+            </div>
+             <div class = "LR" > 
+              <input type="text" placeholder="First Name" name="F-Name" required>
+              <input type="text" placeholder="Last Name" name="L-Name" required>
+            </div>
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+      
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email">
+            
+            <div class = "LR" >
+              <label for="birthdate"><b>Birthdate</b></label>
+              <label for="isDirect"><b>Are you a Director</b></label>
+            </div>
+            <div class = "LR" >
+              <input type="date" name="birthdate" required>
+              <input type = "checkbox" name="isDir">
+              
+            </div>
+            <label for="favgen"><b>Favorite genres (at least 1)</b></label>
+            <div class = "genre">
+              Action<input type = "checkbox" name="gen[]" value='Animation'>
+              Drama<input type = "checkbox" name="gen[]" value='Drama'>
+              Family<input type = "checkbox" name="gen[]" value='Family'>
+              Comedy<input type = "checkbox" name="gen[]" value='Comedy'>
+              Sci-Fi<input type = "checkbox" name="gen[]" value='Sci-Fi'>
+            </div>
+            <div class = "genre">
+              Animation<input type = "checkbox" name="gen[]" value='Adventure'>
+              Horor<input type = "checkbox" name="gen[]" value='Horor'>
+              Romance<input type = "checkbox" name="gen[]" value='Romance'>
+              Sport<input type = "checkbox" name="gen[]" value='Sport'>
+              Crime<input type = "checkbox" name="gen[]" value='Crime'>
+            </div>
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('signup').style.display='none'" class="cancelbtn">Cancel</button>
+              <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+          </div>
+        </form>
+    </div>
+</body>
+</html>

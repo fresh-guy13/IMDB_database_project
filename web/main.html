@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="main_pages" content="width=device-width, initial-scale=1.0">
+        <title>The Movie Database</title>
+        <link rel="stylesheet" href="css/main.css">
+</head>
+<div class="sidenav">
+    <a href="#">The Movie Database</a>
+    
+    <a href="#">Searching</a>
+    <a href="./user_space.html">User's space</a>
+    <a href="./Recom.html">Recommendation</a>
+    <a href="./landing.html">Log out</a>
+  </div>
+  <body>
+    <div class = "main", id="main_head">
+        <h3>Welcome to the IMDB Movie Database&#128512;!</h3>
+        
+    </div>
+    <div class = "main", id = "main_content">
+        <div class = "hi", id = "main_genre_rates">
+            <form id="genreform"  method="post">
+                <b>Search 10 movies with specific genre and ratings(higher)!</b>
+                <br>
+                <label for="genre">choose genre</label>
+                <select name="genre">
+                    <option value="Action">Action</option>
+                    <option value="Adventure" selected>Adventure</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Family" >Family</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Animation">Animation</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                </select>
+                <input type="text" placeholder="Enter Rating" name="rating">
+                <br>
+                <div class=genreform>
+                </div>
+                <button type="submit">Search</button>
+                <!---<button >Clear</button>--->
+            </form>
+        </div>
+        <!---Start year searching--->
+        <div class = "hi", id = "main_startY_rates">
+            <form id="startYform" method="post">
+                <b>Search 10 movies start after this year!</b>
+                <br>
+                <input type="text" placeholder="Enter start_year" name="start_year">
+                <input type="text" placeholder="Enter Rating" name="rating">
+                <br>
+                <div class=startform>
+                </div>
+                <button type="submit">Search</button>
+                <!---<button >Clear</button>--->
+            </form>
+        </div>
+        <!---End year searching--->
+        <div class = "hi", id = "main_endY_rates">
+            <form id="endYform" method="post">
+                <b>Search 10 movies end before this year!</b>
+                <br>
+                <input type="text" placeholder="Enter end_year" name="end_year">
+                <input type="text" placeholder="Enter Rating" name="rating">
+                <br>
+                <div class=endform>
+                </div>
+                <button type="submit">Search</button>
+                <!---<button >Clear</button>--->
+            </form>
+        </div>
+        <!---Highest Rate searching greater than numVoting--->
+        <div class = "hi", id = "main_HighestRate">
+            <form id="HighestRate" method="post">
+                <!---Search from 1000000 can have great result!-->
+                <b>Search 10 movies with highest rating having greater number of Votes!</b>
+                <br>
+                <input type="text" placeholder="Enter numer of votes" name="numVotes">
+                <br>
+                <div class=HighestRate>
+                </div>
+                <button type="submit">Search</button>
+                <!---<button >Clear</button>--->
+            </form>
+        </div>
+        <!---Search specifc director with his movies--->
+        <div class = "hi", id = "main_dirMovie">
+            <form id="dirMovie" method="post">
+                <b>Search specifc director with his/her movies</b>
+                <br>
+                <input type="text" placeholder="Enter name of Director" name="director">
+                <br>
+                <div class=dirMovie>
+                </div>
+                <button type="submit">Search</button>
+                <!---<button >Clear</button>--->
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="css/main.js"></script>
+  </body>
+</html>>
+  

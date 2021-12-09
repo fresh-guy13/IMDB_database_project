@@ -1,0 +1,73 @@
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(5, 125, 194, 0.493);
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #494747;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  body {
+    background-color: rgb(209, 240, 241)
+  }
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+  /* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for all buttons */
+button {
+    background-color: rgba(235, 202, 19, 0.616);
+    color: black;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+
+/* .hi {
+display: flex;
+flex-direction: row;
+} */
+
+.hi input[type="text"]{
+display: table-cell;
+padding: 8px;
+margin: 10px 0 15px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+width: 15%;
+}

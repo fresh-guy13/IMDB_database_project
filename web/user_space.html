@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="main_pages" content="width=device-width, initial-scale=1.0">
+        <title>The Movie Database</title>
+        <link rel="stylesheet" href="css/main.css">
+</head>
+<div class="sidenav">
+    <a href="./main.html">The Movie Database</a>
+    
+    <a href="./main.html">Searching</a>
+    <a href="#">User's space</a>
+    <a href="./Recom.html">Recommendation</a>
+    <a href="./landing.html">Log out</a>
+  </div>
+  <body>
+    <div class = "main", id="main_head">
+        <div id = "show_title">
+        
+        </div>
+    </div>
+    <div class = "main", id = "main_content">
+
+        <div class = "hi", id = "main_search_movie">
+            <form id="search_movie"  method="post">
+                <b>Search movie by title</b>
+                <br>
+                <input type="text" placeholder="primaryTitle" name="SMtitle">
+                <br>
+                <div class="search_movie">
+                </div>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <!---Insert Wathced Movie--->
+        <div class = "hi", id = "main_insert_watched">
+            <form id="insert_watched"  method="post">
+                <b>Insert Movie that you've watched</b>
+                <br>
+                <input type="text" placeholder="Enter Movie id" name="movie_id">
+                <input type="text" placeholder="Enter Rating" name="rating">
+                <br>
+                <div class="insert_watched">
+                </div>
+                <button type="submit">Insert</button>
+                <!---<button >Clear</button>--->
+            </form>
+        </div>
+
+        <div class = "hi", id = "main_see_watched">
+            <!---Recommend System!!!--->
+            <form id="see_watched"  method="post">
+                <b>See what you have watched</b>
+                <br>
+                <div class=see_watched>
+                </div>
+                <button type="submit">Search</button>
+                <!---<button >Clear</button>--->
+            </form>
+        </div>
+        <!---Insert fav genre--->
+        <div class = "hi", id = "main_insert_genre">
+            <form id="insert_genre" method="post">
+                <b>Add or delete you favorite genre</b>
+                <br>
+                <select name="genre">
+                    <option value="Action">Action</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Family" >Family</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Animation">Animation</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                </select>
+                <br>
+                <div class=insert_genre>
+                </div>
+                <button id = addBtn >Add</button>
+                <button id = deleteBtn >Delete</button>
+                <!---<button >Clear</button>--->
+            </form>
+        </div>
+        <!---Insert New directed Movies!--->
+        <div class = "hi", id = "main_insert_directed">
+            <form id="insert_directed"  method="post">
+                <b>Insert Movie that you've directed (Only for Director!)</b>
+                <br>
+                <input type="text" placeholder="Enter Title" name="title">
+                <input type="text" placeholder="Enter Runtime" name="Runtime">
+                <input type="text" placeholder="Enter Start Year" name="startY">
+                <input type="text" placeholder="Enter End Year" name="endY">
+                <br>
+                <label for="genre">choose genre</label>
+                <select name="genreD">
+                    <option value="Action">Action</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Family" >Family</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Animation">Animation</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                </select>
+                <br>
+                <div class="insert_directed">
+                </div>
+                <button type="submit">Insert</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="css/user_space.js"></script>
+  </body>
+</html>>
+  
