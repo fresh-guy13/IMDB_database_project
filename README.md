@@ -2,7 +2,7 @@
 
 ## Need to create table in mysql database first (See in Detail.md!!)
 
-#Preprocessing
+# Preprocessing
 - First have to download the data from https://www.imdb.com/interfaces/ and transfer them into .csv file
 - Put the dataset into IMDB_data folder and execute .py file in processing_data.
 - First execute process_data.py, -> load*.py -> update*.py
