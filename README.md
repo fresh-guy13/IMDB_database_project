@@ -1,4 +1,4 @@
-#IMDB_database_project for GT CS6400 Final Project
+# IMDB_database_project for GT CS6400 Final Project
 
 ## Need to create table in mysql database first (See in Detail.md!!)
 
